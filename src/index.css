@@ -1,13 +1,86 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+html,
+body,
+#root,
+.app
+.content {
+  height: 100%;
+  width: 100%;
+  font-family: 'Source Sans 3';
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.app {
+display: flex;
+position: relative;
 }
+
+
+
+.tooltip {
+  visibility: hidden;
+  position: absolute;
+  text-align: center;
+  padding: 8px;
+  font: 12px sans-serif;
+  background: white;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  pointer-events: none;
+  opacity: 0.9;
+  color: black;
+}
+
+/* Style for the legend boxes that are clickable */
+.legend rect {
+  cursor: pointer;
+  transition: fill 0.2s;
+}
+
+/* Style for the legend text */
+.legend text {
+  cursor: pointer;
+  font-size: 10px;
+}
+
+/* When a line is inactive, it has reduced opacity */
+.line.inactive {
+  opacity: 0.1;
+}
+
+/* When a legend item is active, it changes opacity */
+.legend .active {
+  opacity: 0.5;
+}
+
+/* General styles for the lines in the parallel coordinates chart */
+.line {
+  fill: none;
+  stroke-width: 1.5px;
+}
+
+/* The hidden class can be used to completely hide an element */
+.hidden {
+  display: none;
+}
+
+
+::-webkit-scrollbar {
+  width : 10px;
+}
+
+/* Track for the page */
+::-webkit-scrollbar-track {
+  background: #e0e0e0;
+}
+
+/* Handle for bar */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* handle hover */
+::-webkit-scrollbar-track:hover {
+  background: #555;
+}
+
