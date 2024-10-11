@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/sdvjs/static/css/main.6b959079.css",
+    "main.js": "/sdvjs/static/js/main.80bbcded.js",
+    "index.html": "/sdvjs/index.html",
+    "main.6b959079.css.map": "/sdvjs/static/css/main.6b959079.css.map",
+    "main.80bbcded.js.map": "/sdvjs/static/js/main.80bbcded.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6b959079.css",
+    "static/js/main.80bbcded.js"
+  ]
+}
